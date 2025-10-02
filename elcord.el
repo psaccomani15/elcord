@@ -100,6 +100,7 @@ See <https://discordapp.com/developers/applications/me>."
                                     (go-mode . "go-mode_icon")
                                     (latex-mode . "latex-mode_icon")
                                     (lisp-mode . "lisp-mode_icon")
+                                    (lean4-mode . "lean4-mode_icon")
                                     (lua-mode . "lua-mode_icon")
                                     (magit-mode . "magit-mode_icon")
                                     (markdown-mode . "markdown-mode_icon")
@@ -153,6 +154,7 @@ Note, these icon names must be available as 'small_image' in Discord."
                                     (java-mode . "Java")
                                     (julia-mode . "Julia")
                                     (lisp-mode . "Common Lisp")
+                                    (lean-mode . "lean4")
                                     (markdown-mode . "Markdown")
                                     (magit-mode . "It's Magit!")
                                     ("mhtml-mode" . "HTML")
@@ -222,7 +224,7 @@ Swap this with your own function if you want a custom buffer-details message."
 
 (defcustom elcord-editor-icon 'nil
   "Icon to use for the text editor. When nil, use the editor's native icon."
-  :type '(choice (const :tag "Editor Default" nil)
+  :type '(choice (const :tag "Editor Default" "emacs_icon")
                  (const :tag "Emacs" "emacs_icon")
                  (const :tag "Emacs (Pen)" "emacs_pen_icon")
                  (const :tag "Emacs (Material)" "emacs_material_icon")
