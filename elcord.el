@@ -222,7 +222,7 @@ Swap this with your own function if you want a custom buffer-details message."
   :type 'boolean
   :group 'elcord)
 
-(defcustom elcord-editor-icon '("emacs_icon")
+(defcustom elcord-editor-icon 'nil
   "Icon to use for the text editor. When nil, use the editor's native icon."
   :type '(choice (const :tag "Editor Default" "emacs_icon")
                  (const :tag "Emacs" "emacs_icon")
