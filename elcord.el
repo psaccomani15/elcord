@@ -293,7 +293,7 @@ nil when elcord is not active.")
                               (file-name-directory (file-truename load-file-name)))
   "Path to the 'stdpipe' script.
 On Windows, this script is used as a proxy for the Discord named pipe.
-Unused on otheremacs_icon
+Unused on other platforms")
 (defvar elcord--idle-status nil
   "Current idle status.")
 
