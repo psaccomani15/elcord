@@ -44,10 +44,10 @@ See <https://discordapp.com/developers/applications/me>."
   :group 'elcord)
 
 (defcustom elcord-icon-base
-  '"https://raw.githubusercontent.com/Mstrodl/elcord/master/icons/"
+  '"https://raw.githubusercontent.com/psaccomani15/elcord/master/icons/"
   "Base URL for icon images. Mode icons will be loaded from this URL + the icon name + '.png'"
   :type '(choice (const :tag "Elcord GitHub Repository"
-                        "https://raw.githubusercontent.com/Mstrodl/elcord/master/icons/")
+                        "https://raw.githubusercontent.com/psaccomani15/elcord/master/icons/")
                  (string :tag "Use the specified URL base")
                  (function :tag "Call the function with icon name as an arg to get the URL base."))
   :group 'elcord)
@@ -537,7 +537,7 @@ otherwise if it is a function, call it with `mode' and return that value."
    (cond
     ((progn elcord-editor-icon) elcord-editor-icon)
     ((boundp 'spacemacs-version) "spacemacs_icon")
-    ((boundp 'doom-version) "doom_icon")
+    ((boundp 'doom-version) "emacs_icon")
     (t "emacs_icon"))))
 
 (defun elcord--mode-icon ()
