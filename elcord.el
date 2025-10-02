@@ -46,7 +46,7 @@ See <https://discordapp.com/developers/applications/me>."
 (defcustom elcord-icon-base
   '"https://raw.githubusercontent.com/psaccomani15/elcord/master/icons/"
   "Base URL for icon images. Mode icons will be loaded from this URL + the icon name + '.png'"
-  :type '(choice (const :tag "Elcord GitHub Repository"
+  :type '(choice (const :tag "psaccomani15 GitHub Repository"
                         "https://raw.githubusercontent.com/psaccomani15/elcord/master/icons/")
                  (string :tag "Use the specified URL base")
                  (function :tag "Call the function with icon name as an arg to get the URL base."))
@@ -154,7 +154,7 @@ Note, these icon names must be available as 'small_image' in Discord."
                                     (java-mode . "Java")
                                     (julia-mode . "Julia")
                                     (lisp-mode . "Common Lisp")
-                                    (lean-mode . "lean4")
+                                    (lean4-mode . "lean4")
                                     (markdown-mode . "Markdown")
                                     (magit-mode . "It's Magit!")
                                     ("mhtml-mode" . "HTML")
@@ -222,7 +222,7 @@ Swap this with your own function if you want a custom buffer-details message."
   :type 'boolean
   :group 'elcord)
 
-(defcustom elcord-editor-icon "Emacs"
+(defcustom elcord-editor-icon '("Emacs")
   "Icon to use for the text editor. When nil, use the editor's native icon."
   :type '(choice (const :tag "Editor Default" "emacs_icon")
                  (const :tag "Emacs" "emacs_icon")
