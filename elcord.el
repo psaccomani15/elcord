@@ -231,8 +231,8 @@ Swap this with your own function if you want a custom buffer-details message."
                  (const :tag "Emacs (Legacy)" "emacs_legacy_icon")
                  (const :tag "Emacs (Dragon)" "emacs_dragon_icon")
                  (const :tag "Spacemacs" "spacemacs_icon")
-                 (const :tag "Doom" "doom_icon")
-                 (const :tag "Doom Cute" "doom_cute_icon"))
+                 (const :tag "Doom" "emacs_icon")
+                 (const :tag "Doom Cute" "emacs_icon"))
   :group 'elcord)
 
 (defcustom elcord-boring-buffers-regexp-list '("^ "
@@ -293,8 +293,7 @@ nil when elcord is not active.")
                               (file-name-directory (file-truename load-file-name)))
   "Path to the 'stdpipe' script.
 On Windows, this script is used as a proxy for the Discord named pipe.
-Unused on other platforms.")
-
+Unused on otheremacs_icon
 (defvar elcord--idle-status nil
   "Current idle status.")
 
